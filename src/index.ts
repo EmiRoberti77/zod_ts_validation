@@ -9,6 +9,7 @@ const userSchema = z.object({
   mobile: z.string().refine(validator.isMobilePhone),
   age: z.number().min(18),
   dob: z.date(),
+  freinds: z.array(z.string()).min(1),
   details: z.object({
     isSubscribed: z.boolean(),
   }),
@@ -20,8 +21,9 @@ const emi: User = {
   firstName: "Emi",
   lastName: "Roberti",
   email: "emi@emi.ai",
-  mobile: "+447500994545t",
+  mobile: "+447500994545",
   age: 47,
+  freinds: ["friend 1", "friend 2"],
   dob: new Date(1977, 5, 25),
   details: {
     isSubscribed: true,
