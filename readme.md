@@ -39,11 +39,11 @@ The z.infer utility automatically infers the TypeScript type for the schema, ens
 ```typescript
 const emi: User = {
   firstName: "Emi",
-  lastName: "Roberti",
+  lastName: "Smith",
   email: "emi@emi.ai",
-  mobile: "+447500994545",
+  mobile: "+447500884545",
   age: 47,
-  dob: new Date(1977, 5, 25),
+  dob: new Date(1977, 4, 12),
   details: {
     isSubscribed: true,
   },
